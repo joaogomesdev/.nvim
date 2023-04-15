@@ -10,7 +10,8 @@ return {
         "html",
         "tsserver",
         "svelte",
-        "tailwindcss"
+        "tailwindcss",
+        "eslint",
       },
     },
   },

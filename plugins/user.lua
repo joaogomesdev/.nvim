@@ -9,4 +9,8 @@ return {
       { "<leader>T", "<cmd>TodoTelescope<cr>", desc = "Open the Telescope with the TODOS" },
     },
   },
+  {
+    "themaxmarchuk/tailwindcss-colors.nvim",
+    opts = {},
+  },
 }
