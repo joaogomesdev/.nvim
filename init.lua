@@ -16,19 +16,8 @@ return {
       --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
     },
   },
-  plugins = {
-    {
-      "goolord/alpha-nvim",
-      opts = function(_, opts)      -- override the options using lazy.nvim
-        opts.section.header.val = { -- change the header section value
-          "    My Custom ",
-          " Dashboard Header",
-        }
-      end,
-    },
-  },
   -- Set colorscheme to use
-  colorscheme = "nightfox",
+  colorscheme = "catppuccin",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
