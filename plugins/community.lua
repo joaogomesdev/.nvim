@@ -7,5 +7,4 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
 }
