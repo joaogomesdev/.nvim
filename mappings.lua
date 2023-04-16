@@ -11,18 +11,27 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
-    -- tables with the `name` key will be registered with which-key if it's installed
-    -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
-    -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-s>"] = { ":w!<cr>", desc = "Save File Quick" },
+    ["<C-f>"] = { "<cmd>silent !tmux neww tmux-sessionnizer<CR>" },
+    ["<leader>s"] = { ":%s//" },
+    ["<leader>x"] = { "<cmd>!chmod +x %<CR>", silent = true },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  v = {
+    ["J"] = { ":m '>+1<CR>gb=gv" },
+    ["K"] = { ":m '<-2<CR>gb=gv" },
+  },
+  x = {
+    ["<leader>p"] = { '"_dP' },
   },
 }

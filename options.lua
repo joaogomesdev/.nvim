@@ -5,8 +5,18 @@ return {
     relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
-    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
+    signcolumn = "yes", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    smartindent = true,
+    hlsearch = false,
+    incsearch = true,
+    termguicolors = true,
+    swapfile = false,
+    backup = false,
+    undodir = os.getenv "HOME" .. "/.vim/undodir",
+    undofile = true,
+    updatetime = 50,
+    colorcolumn = "80",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader

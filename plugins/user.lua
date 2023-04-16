@@ -13,4 +13,11 @@ return {
     "themaxmarchuk/tailwindcss-colors.nvim",
     opts = {},
   },
+  {
+    "mbbill/undotree",
+    opts = {},
+    keys = {
+      { "<leader>u", "<cmd>UndotreeToggle<cr>", desc = "UndotreeToggle" },
+    },
+  },
 }
