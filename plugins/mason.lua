@@ -12,6 +12,7 @@ return {
         "svelte",
         "tailwindcss",
         "eslint",
+        "elixirls",
       },
     },
   },
