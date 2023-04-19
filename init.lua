@@ -47,13 +47,17 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      "lua_ls",
-      "html",
-      "tsserver",
-      "svelte",
-      "tailwindcss",
-      "eslint",
-      "elixirls",
+      "rust_analyzer",
+    },
+    config = {
+      rust_analyzer = {
+        cmd = {
+          "rustup",
+          "run",
+          "stable",
+          "rust-analyzer",
+        },
+      },
     },
   },
   -- Configure require("lazy").setup() options
