@@ -22,6 +22,10 @@ return {
     ["<C-f>"] = { "<cmd>silent !tmux neww tmux-sessionnizer<CR>" },
     ["<leader>s"] = { ":%s//" },
     ["<leader>x"] = { "<cmd>!chmod +x %<CR>", silent = true },
+    ["<C-d>"] = { "<C-d>zz" },
+    ["<C-u>"] = { "<C-u>zz" },
+    ["n"] = { "nzzzv" },
+    ["N"] = { "Nzzzv" },
   },
   t = {
     -- setting a mapping to false will disable it
